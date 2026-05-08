@@ -8,6 +8,20 @@
       "when": 1776790267342,
       "tag": "0000_parallel_lethal_legion",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1778261322519,
+      "tag": "0001_demonic_blackheart",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1778261515106,
+      "tag": "0002_naive_talos",
+      "breakpoints": true
     }
   ]
 }
