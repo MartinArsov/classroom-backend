@@ -15,7 +15,7 @@ const securityMiddleware = async (
 
     switch (role) {
       case 'admin':
-        limit = 2;
+        limit = 20;
         message = 'Admin rate limit exceeded (20 per minute). Slow down.';
         break;
       case 'teacher':
@@ -59,7 +59,7 @@ const securityMiddleware = async (
       });
     }
     if (decision.isDenied() && decision.reason.isRateLimit()) {
-      return res.status(403).json({
+      return res.status(429).json({
         error: 'Too many requests.',
         message: message,
       });
